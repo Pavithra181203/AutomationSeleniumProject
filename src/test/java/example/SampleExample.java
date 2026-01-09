@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.Date;
 
-public class NinjaTutorial1 {
+public class SampleExample {
     @Test
     public void verifyRegisterWithMandatoryFields(){
         WebDriver driver = new ChromeDriver();
@@ -45,6 +45,7 @@ public class NinjaTutorial1 {
         Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
 
     }
+
     public String generateNewEmail(){
         return new Date().toString().replaceAll("\\s","").replaceAll("\\:","")+"@gmail.com";
     }
